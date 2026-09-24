@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffd6e7, #fff0f5);
+  overflow: hidden;
+}
+
+.card {
+  width: min(430px, 100%);
+  padding: 30px 24px 35px;
+  text-align: center;
+  background: rgba(255,255,255,.92);
+  border-radius: 28px;
+  box-shadow: 0 15px 45px rgba(190, 60, 100, .2);
+}
+
+.image-wrap {
+  width: 210px;
+  height: 180px;
+  margin: 0 auto 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainImage {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+h1 {
+  margin: 12px 0 8px;
+  color: #e83e72;
+  font-size: 32px;
+}
+
+p {
+  margin: 0 0 25px;
+  color: #777;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  min-height: 70px;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 14px 25px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .35s ease;
+}
+
+#yesBtn {
+  background: #ff4f87;
+  color: white;
+  box-shadow: 0 7px 18px rgba(255,79,135,.3);
+}
+
+#noBtn {
+  background: #eee;
+  color: #666;
+}
+
+#yesBtn:hover {
+  transform: scale(1.06);
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  font-size: 24px;
+  pointer-events: none;
+  animation: fly 3s linear forwards;
+}
+
+@keyframes fly {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.success h1 {
+  color: #ff3d7f;
+}
