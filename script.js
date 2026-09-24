@@ -62,7 +62,7 @@ yesBtn.addEventListener("click", () => {
   subtext.textContent = "iu em nhiều lắm! 🥰";
   image.src = "https://media.giphy.com/media/26FLdmIp6wJr91JAI/giphy.gif";
 
-  yesBtn.textContent = "iu vợ thúiii
+  yesBtn.textContent = "iu vợ thúiii";
   noBtn.style.display = "none";
   yesBtn.style.transform = "scale(1.15)";
 
