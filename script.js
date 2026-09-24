@@ -8,23 +8,23 @@ let noCount = 0;
 
 const states = [
   {
-    text: "Có yêu anh không? ❤️",
-    sub: "Chọn một câu trả lời nhé 😚",
+    text: "yêu anh hong? ",
+    sub: "vợ chọn đi",
     img: "https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif"
   },
   {
-    text: "Suy nghĩ lại đi mà 🥺",
-    sub: "Anh cho em chọn lại đó...",
+    text: "thiệt à 🥺",
+    sub: "cho vợ chọn lại...",
     img: "https://media.giphy.com/media/ROF8OQvDmxytW/giphy.gif"
   },
   {
-    text: "Không được chọn Không đâu 😭",
-    sub: "Nút Có đang lớn dần rồi đó!",
+    text: "NOOOOOOOOO 😭",
+    sub: "hết yêu anh r",
     img: "https://media.giphy.com/media/9Y5BbDSkSTiY8/giphy.gif"
   },
   {
-    text: "Em chắc là không yêu anh à? 🥹",
-    sub: "Anh buồn thật đấy...",
+    text: "không yêu anh à?",
+    sub: "buồn thật đấy...",
     img: "https://media.giphy.com/media/BEob5qwFkSJ7G/giphy.gif"
   }
 ];
@@ -52,17 +52,17 @@ noBtn.addEventListener("click", () => {
   if (noCount >= 6) {
     noBtn.style.display = "none";
     yesBtn.style.transform = "scale(2)";
-    question.textContent = "Chỉ còn một lựa chọn thôi ❤️";
-    subtext.textContent = "Bấm Có đi mà 😚";
+    question.textContent = "CÓ YÊU KO???";
+    subtext.textContent = "VỢ THỐI";
   }
 });
 
 yesBtn.addEventListener("click", () => {
-  question.textContent = "Anh biết mà! Em yêu anh ❤️";
-  subtext.textContent = "Yêu em nhiều lắm! 🥰";
+  question.textContent = "Anh biết mà! chồng cũng iu vợ ❤️";
+  subtext.textContent = "iu em nhiều lắm! 🥰";
   image.src = "https://media.giphy.com/media/26FLdmIp6wJr91JAI/giphy.gif";
 
-  yesBtn.textContent = "❤️ Anh cũng yêu em ❤️";
+  yesBtn.textContent = "iu vợ thúiii
   noBtn.style.display = "none";
   yesBtn.style.transform = "scale(1.15)";
 
